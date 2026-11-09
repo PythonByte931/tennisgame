@@ -1,6 +1,6 @@
 # Zac Game Arcade
 
-This folder contains the arcade landing page, with links to Tennis and Basketball.
+This folder contains the arcade landing page, featuring Tennis and a link to a separate Basketball Arcade.
 
 ## Live games
 
@@ -8,7 +8,7 @@ This folder contains the arcade landing page, with links to Tennis and Basketbal
 
 https://tennisgame-3ff.pages.dev/
 
-### Basketball
+### Basketball Arcade
 
 https://basketballgame-b9b.pages.dev/
 
@@ -18,4 +18,4 @@ https://basketballgame-b9b.pages.dev/
 
 ## Local use
 
-Open `index.html` in a browser and select Tennis or Basketball to open its live game.
+Open `index.html` in a browser to play Tennis or visit the separate Basketball Arcade.
