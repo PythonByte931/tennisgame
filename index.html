@@ -92,19 +92,6 @@
             border-color: #8292ff;
         }
 
-        .game-card--arcade {
-            background: #202b43;
-            border-color: #536b8e;
-        }
-
-        .game-card--arcade:hover {
-            border-color: #a0c4ff;
-        }
-
-        .game-card--arcade .game-image {
-            background: linear-gradient(135deg, #176b70, #3554a4);
-        }
-
         .game-image {
             height: 175px;
             display: flex;
@@ -144,6 +131,51 @@
 
         .play-button:hover {
             background: #536bfa;
+        }
+
+        .arcade-link {
+            margin-top: 32px;
+            padding: 22px 26px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            background: #172f36;
+            border: 1px solid #32616a;
+            border-radius: 12px;
+        }
+
+        .arcade-link h2 {
+            font-size: 19px;
+            margin-bottom: 6px;
+        }
+
+        .arcade-link p {
+            color: #b7c8cb;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .arcade-link a {
+            flex-shrink: 0;
+            color: #101426;
+            background: #8bd1c7;
+            padding: 11px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .arcade-link a:hover {
+            background: #a8e3da;
+        }
+
+        @media (max-width: 560px) {
+            .arcade-link {
+                align-items: flex-start;
+                flex-direction: column;
+            }
         }
 
         footer {
@@ -200,29 +232,17 @@
 
             </article>
 
-            <article class="game-card game-card--arcade">
-
-                <div class="game-image">
-                    🏀
-                </div>
-
-                <div class="game-info">
-                    <h3>Basketball Arcade</h3>
-
-                    <p>
-                        Explore basketball games on our separate arcade site.
-                    </p>
-
-                    <a
-                        href="https://basketballgame-b9b.pages.dev/"
-                        class="play-button">
-                        Visit Basketball Arcade ↗
-                    </a>
-                </div>
-
-            </article>
-
         </div>
+
+        <aside class="arcade-link" aria-labelledby="basketball-arcade-title">
+            <div>
+                <h2 id="basketball-arcade-title">More games to explore</h2>
+                <p>Visit our separate site for basketball games.</p>
+            </div>
+            <a href="https://basketballgame-b9b.pages.dev/">
+                Basketball Arcade ↗
+            </a>
+        </aside>
 
     </main>
 
