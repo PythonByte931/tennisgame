@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10251e">
+    <meta name="description" content="Play Court Rally, a quick tennis game against the computer.">
+    <title>Court Rally | Zac Game Arcade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <a class="back-link" href="../index.html">← Back to Zac Game Arcade</a>
+
+        <header class="heading">
+            <p class="eyebrow">ZAC GAME ARCADE PRESENTS</p>
+            <h1>Court <span>Rally</span></h1>
+            <p class="tagline">A quick tennis match against the computer.</p>
+        </header>
+
+        <section class="game-panel" aria-label="Court Rally game">
+            <div class="scoreboard" aria-label="Score">
+                <div class="score">
+                    <span class="score-label">YOU</span>
+                    <span id="player-score" class="score-value">0</span>
+                </div>
+                <div class="match-label">FIRST TO 5</div>
+                <div class="score score--opponent">
+                    <span class="score-label">CPU</span>
+                    <span id="opponent-score" class="score-value">0</span>
+                </div>
+            </div>
+
+            <canvas
+                id="court"
+                width="900"
+                height="560"
+                tabindex="0"
+                aria-label="Tennis court. Move your racket with the mouse, touch, or left and right arrow keys.">
+                Your browser does not support the canvas element.
+            </canvas>
+
+            <div class="game-controls">
+                <p id="game-status" class="game-status" aria-live="polite">
+                    Move with your mouse, touch, or ← → keys. First to 5 wins.
+                </p>
+                <button id="start-button" class="start-button" type="button">Start match</button>
+            </div>
+        </section>
+
+        <p class="help-text">Move your racket to return the ball. Play with mouse, touch, or ← → keys.</p>
+    </main>
+</body>
+</html>
